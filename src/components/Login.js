@@ -18,7 +18,7 @@ console.log(user);
 const loginclick=(e)=>{
   e.preventDefault();
 
-axios.post('https://localhost:9000/login',user)
+axios.post('https://backend-deploy-production-ccc9.up.railway.app/login',user)
  .then((res)=>{
       console.log(user);
    alert(res.data.message);

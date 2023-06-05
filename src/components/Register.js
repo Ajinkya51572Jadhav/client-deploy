@@ -26,7 +26,9 @@ const register=(e)=>{
 const {name,email,password,cpassword}=user;
 if(name && email && password && (password===cpassword)){
 // alert('register successfully');
-  axios.post('https://localhost:9000/register',user).then((res)=>{
+
+// https://localhost:9000/register 
+axios.post('https://backend-deploy-production-ccc9.up.railway.app/register',user).then((res)=>{
     alert(res.data.message);
     navigator("/login"); 
   
